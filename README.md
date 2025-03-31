@@ -129,8 +129,8 @@ RankBasedHashing/
 ├── src/
 │   ├── rank_based_hash_v1.cpp
 │   ├── rank_based_hash_v2.cpp
-│   ├── rank_based_hash_indexing_v1.cpp
-│   └── rank_based_hash_indexing_v2.cpp
+│   ├── rank_based_hash_indexing_v1.1.cpp
+│   └── rank_based_hash_indexing_v2.1.cpp
 ├── files/
 │   └── feat-matrix.txt
 │   └── query_features.txt
