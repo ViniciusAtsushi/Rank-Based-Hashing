@@ -96,13 +96,13 @@ g++ rank_based_hash_indexing_v2.1.cpp -O3 -fopenmp -o hash_index_v2
 
 ### Version 1.1: External queries (ranking-based)
 ```bash
-./hash_index_v1 files/query_features.txt
+./hash_index_v1 ../files/query_features.txt
 # Output: query_rks.txt, query_dists.txt
 ```
 
 ### Version 2.1: External queries (hash-based)
 ```bash
-./hash_index_v2 files/query_features.txt
+./hash_index_v2 ../files/query_features.txt
 # Output: query_rks.txt, query_dists.txt
 ```
 

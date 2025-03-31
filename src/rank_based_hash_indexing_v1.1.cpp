@@ -18,12 +18,12 @@
 #include <algorithm>
 #include <fstream>
 
-#define N_IMAGES 1360        // Dataset size
+#define N_IMAGES 25        // Dataset size
 #define FEATURES 4096        // Dimensionality of the feature vectors
 #define P_DECAY 0.99         // Exponential decay factor used in the weighting function
-#define N_NEIGHBORS 30       // Number of neighbors considered per feature during aggregation
-#define TOP_N 1000           // Number of top candidates selected based on aggregated weights
-#define TOP_K 80             // Number of top-ranked candidates selected for re-ranking with Euclidean distance (TOP_K <= TOP_N)
+#define N_NEIGHBORS 15       // Number of neighbors considered per feature during aggregation
+#define TOP_N 25           // Number of top candidates selected based on aggregated weights
+#define TOP_K 10             // Number of top-ranked candidates selected for re-ranking with Euclidean distance (TOP_K <= TOP_N)
 
 using namespace std;
 
@@ -172,7 +172,7 @@ void query_image(const float* raw_query, const vector<float>& min_val, const vec
 
 int main(int argc, char** argv) {
     int n_images;
-    float* feat_matrix = load_feat_matrix("./files/feat-matrix.txt", n_images);
+    float* feat_matrix = load_feat_matrix("../files/feat-matrix.txt", n_images);
 
     vector<int> rk_id_flat;
     vector<float> rk_val_flat, min_val, max_val;
