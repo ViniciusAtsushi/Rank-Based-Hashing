@@ -18,11 +18,11 @@
 #include <algorithm>
 #include <fstream>
 
-#define N_IMAGES 25        // Dataset size
+#define N_IMAGES 25          // Dataset size
 #define FEATURES 4096        // Dimensionality of the feature vectors
 #define P_DECAY 0.99         // Exponential decay factor used in the weighting function
 #define N_NEIGHBORS 15       // Number of neighbors considered per feature during aggregation
-#define TOP_N 25           // Number of top candidates selected based on aggregated weights
+#define TOP_N 25             // Number of top candidates selected based on aggregated weights
 #define TOP_K 10             // Number of top-ranked candidates selected for re-ranking with Euclidean distance (TOP_K <= TOP_N)
 
 using namespace std;
